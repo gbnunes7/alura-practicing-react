@@ -7,6 +7,7 @@ import favIconDesmarcado from "./favorite_outline.png"
 export const useCardContext = () => {
     const [card,setCard,favorito,setFavorito] = useContext(CardContext)
 
+
     useEffect(() => {
         fetch("/data/db.json")
             .then((response) => response.json())
@@ -21,7 +22,7 @@ export const useCardContext = () => {
         }));
     }
     
-
+    const favoritosFiltrados = card.filter((cardItem) => favorito[cardItem.id] === favIconMarcado);
 
     return {
         card,
@@ -29,6 +30,7 @@ export const useCardContext = () => {
         favorito,
         setFavorito,
         aoClicar,
+        favoritosFiltrados,
     }
 
 }
