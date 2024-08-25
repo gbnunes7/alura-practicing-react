@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import Banner from "../../components/banner";
 import Title from "../../components/title";
 import { useCardContext } from "../../hooks/useCardContext";
+import Error404 from "../error";
 
 const Player = () => {
 	const { card } = useCardContext();
@@ -11,7 +12,7 @@ const Player = () => {
 	});
 
     if (!video) {
-		return <p>Video not found</p>; 
+		return <Error404/>; 
     }
 
 
