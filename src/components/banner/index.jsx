@@ -1,9 +1,6 @@
-
-const Banner = ({background}) => {
+const Banner = ({backgroundImage}) => {
     return (
-        <div className="h-80 bg-[url('/public/imagens/banner-home.png')]">
-
-        </div>
+        <div className={`h-80 bg-[url('${backgroundImage}')]`}></div>
     )
 }
 
