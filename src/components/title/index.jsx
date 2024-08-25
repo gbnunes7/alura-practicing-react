@@ -1,4 +1,4 @@
-const Titulo = ({children}) => {
+const Title = ({children}) => {
     return (
         <div className="text-2xl text-center font-medium">
             {children}
@@ -6,4 +6,4 @@ const Titulo = ({children}) => {
     )
 }
 
-export default Titulo
+export default Title
