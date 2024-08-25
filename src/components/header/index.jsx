@@ -3,7 +3,7 @@ import logo from "./logo.png";
 import HeaderLink from "../headerLink";
 
 const Header = () => {
-	const locate = useLocation();
+	useLocation();
 
 	const getUnderlineStyle = (path) => {
 		return location.pathname === path ? "underline" : "none";
