@@ -3,6 +3,7 @@ import Error404 from "../pages/error";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FixedLayout from "../components/fixedLayout";
 import { CardProvider } from "../context/CardContext";
+import Favorite from "../pages/favorite";
 
 function AppRoutes() {
 	return (
@@ -11,6 +12,7 @@ function AppRoutes() {
 				<Routes>
 					<Route path="/" element={<FixedLayout />}>
 						<Route path="/" element={<Home />} />
+						<Route path="/favoritos" element={<Favorite />} />
 						<Route path="/*" element={<Error404 />} />
 					</Route>
 				</Routes>
