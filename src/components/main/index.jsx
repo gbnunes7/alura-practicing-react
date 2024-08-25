@@ -12,7 +12,7 @@ const Main = () => {
 	}, []);
 
 	return (
-		<main className="flex flex-col gap-10 justify-center align-center bg-blue-500 p-4">
+		<main className="flex-grow flex flex-col justify-center items-center gap-8">
 			<Title>
 				<h1>Um lugar para guardar seus vídeos e filmes!</h1>
 			</Title>
