@@ -1,5 +1,5 @@
 import Banner from "../../components/banner";
-import Main from "../../components/Main";
+import Main from "../../components/main";
 
 const Home = () => {
 	return (
