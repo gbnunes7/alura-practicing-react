@@ -24,3 +24,5 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+
+//Release v1.0.0
